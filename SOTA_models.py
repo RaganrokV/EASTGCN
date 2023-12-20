@@ -132,6 +132,36 @@ adj=pd.read_csv(r'3-Unfixed sampling//ADJ.csv')
 adj_matrix=adj
 Normalization = preprocessing.MinMaxScaler()
 Norm_TS = Normalization.fit_transform(data_csv.values)
+
+# """PEME04"""
+# data = np.load('D:\Traffic data\PEMS04\PEMS04.npz')
+# array_names = data.files
+# # 获取每个数组的值
+# for array_name in array_names:
+#     data_csv = data[array_name][:,:,0]
+#
+#
+# adj =pd.read_csv(r'3-Unfixed sampling//ADJ1.csv')
+# Normalization = preprocessing.MinMaxScaler()
+# Norm_TS = Normalization.fit_transform(data_csv)
+#
+# train_size=int(0.8*len(data_csv))
+
+"""PEME08"""
+data = np.load('D:\Traffic data\PEMS08\PEMS08.npz')
+array_names = data.files
+# 获取每个数组的值
+for array_name in array_names:
+    data_csv = data[array_name][:,:,0]
+
+
+adj = pd.read_csv(r'3-Unfixed sampling//ADJ2.csv')
+Normalization = preprocessing.MinMaxScaler()
+Norm_TS = Normalization.fit_transform(data_csv)
+
+train_size=int(0.8*len(data_csv))
+
+
 #%%
 """divide data"""
 trainX, trainY, testX, testY = divide_data(data=Norm_TS, train_size=train_size,
@@ -157,6 +187,8 @@ train_loader = Data.DataLoader(dataset=train_dataset,
                                batch_size=batch_size, shuffle=False)
 test_loader = Data.DataLoader(dataset=test_dataset,
                               batch_size=batch_size, shuffle=False)
+
+
 #%%TGCN
 # net = my_TGCN2(in_channels=seq_len, out_channels=64,out_size=pre_len,batch_size=batch_size).to(device)
 # net = my_ASTGCN(in_channels=seq_len, out_channels=100,
