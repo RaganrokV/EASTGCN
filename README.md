@@ -40,7 +40,7 @@ ITSM realizes automatic collection of traffic flow and occupancy by deploying vi
 
 ## Experimental details and performance comparisons can be found in our original paper（ idk how to make table）, and you are welcome to cite our paper if you find it helpful.
 
-"""
+```
 @article{huang_variable-length_2024,
 	title = {Variable-length traffic state prediction and applications for urban network with adaptive signal timing plan},
 	volume = {637},
@@ -56,6 +56,6 @@ ITSM realizes automatic collection of traffic flow and occupancy by deploying vi
 	year = {2024},
 	pages = {129566},
 }
-"""
+```
 
 
