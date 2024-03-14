@@ -40,18 +40,22 @@ ITSM realizes automatic collection of traffic flow and occupancy by deploying vi
 
 ## Experimental details and performance comparisons can be found in our original paper（ idk how to make table）, and you are welcome to cite our paper if you find it helpful.
 
-@article{HUANG2024129566,
-title = {Variable-length traffic state prediction and applications for urban network with adaptive signal timing plan},
-journal = {Physica A: Statistical Mechanics and its Applications},
-volume = {637},
-pages = {129566},
-year = {2024},
-issn = {0378-4371},
-doi = {https://doi.org/10.1016/j.physa.2024.129566},
-url = {https://www.sciencedirect.com/science/article/pii/S0378437124000748},
-author = {Hai-chao Huang and Hong-di He and Zhe Zhang and Qing-hai Ma and Xing-kuo Xue and Wen-xiu Zhang},
-keywords = {Traffic states prediction, Variable-length, Deep learning, Adaptive signal timing, Application scenarios},
-abstract = {In urban road networks, traffic states are characterized with complicated signal intervention and results in variable-length traffic states, especially under the adaptive signal timing condition. Due to the limitations in available real-world data and technological limitations, there have been limited investigations regarding the prediction of traffic states in road networks under adaptive signal timing. The purpose of this study is to provide a prediction method for variable-length traffic states and discuss the practical application of predictions within intelligent transportation systems. This study proposes an indicator called Phase flow Rate (PR) that integrates traffic states with signal timing information. We further introduce warping algorithm align the variable-length PR into shapes that can be accepted by the model. Finally, we propose an embedded attention spatio-temporal graph convolutional neural network (EASTGCN) for predicting PR in urban traffic systems. Base on two months of data from an urban network with an adaptive signal timing plan, experimental results demonstrate that our approach effectively addresses the challenge of variable-length data due to irregular sampling. Moreover, EASTGCN outperforms state-of-the-art models, showing an improvement in prediction performance ranging from 10.6% to 21.2%. Predicting PR rather than conventional traffic states offers distinct advantages in three application scenarios, including a 6.6% improvement in energy efficiency through speed inducement of electric vehicles, 16% travel time savings for route planning of connected vehicles, and real-time optimization for traffic congestion management.}
+"""
+@article{huang_variable-length_2024,
+	title = {Variable-length traffic state prediction and applications for urban network with adaptive signal timing plan},
+	volume = {637},
+	copyright = {All rights reserved},
+	issn = {03784371},
+	url = {https://linkinghub.elsevier.com/retrieve/pii/S0378437124000748},
+	doi = {10.1016/j.physa.2024.129566},
+	language = {en},
+	urldate = {2024-02-19},
+	journal = {Physica A: Statistical Mechanics and its Applications},
+	author = {Huang, Hai-chao and He, Hong-di and Zhang, Zhe and Ma, Qing-hai and Xue, Xing-kuo and Zhang, Wen-xiu},
+	month = mar,
+	year = {2024},
+	pages = {129566},
 }
+"""
 
 
